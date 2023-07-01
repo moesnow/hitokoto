@@ -1,6 +1,6 @@
 # hitokoto
 
-在终端中获取[一言](https://hitokoto.cn)
+在终端中获取[一言](https://hitokoto.cn)，使用libcurl和json-c
 
 ## 依赖
 
