@@ -13,7 +13,7 @@ sudo apt install libcurl4-openssl-dev libjson-c-dev
 ### macOS
 
 ```bash
-brew install curl json-c
+brew install json-c
 ```
 
 ## 编译
