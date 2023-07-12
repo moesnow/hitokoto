@@ -45,11 +45,11 @@ int main() {
                     printf(
                         "\033[33m"
                         "%s"
-                        "\033[30m"
+                        "\033[0m"
                         ": “"
-                        "\033[38;5;165m"
+                        "\033[35m"
                         "%s"
-                        "\033[30m"
+                        "\033[0m"
                         "”"
                         "\n",
                         json_object_get_string(from), json_object_get_string(sentence));
