@@ -2,6 +2,15 @@
 
 在终端中获取[一言](https://hitokoto.cn)，使用libcurl和json-c
 
+## 安装
+
+### Homebrew
+
+```zsh
+brew tap moesnow/tools
+brew install hitokoto
+```
+
 ## 依赖
 
 ### Debian/Ubuntu
