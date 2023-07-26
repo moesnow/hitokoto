@@ -14,11 +14,11 @@ else ifeq ($(shell uname -s), Darwin)
     # macOS 平台
     # 检查处理器架构
     ifeq ($(shell uname -p), arm)
-        CFLAGS += -I/opt/homebrew/Cellar/json-c/0.16/include/
-        LDFLAGS += -L/opt/homebrew/Cellar/json-c/0.16/lib
+        CFLAGS += -I/opt/homebrew/include/
+        LDFLAGS += -L/opt/homebrew/lib
     else
-        CFLAGS += -I/usr/local/Cellar/json-c/0.16/include/
-        LDFLAGS += -L/usr/local/Cellar/json-c/0.16/lib
+        CFLAGS += -I/usr/local/include/
+        LDFLAGS += -L/usr/local/lib
     endif
 endif
 
