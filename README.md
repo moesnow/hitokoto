@@ -31,6 +31,8 @@ brew install json-c
 git clone https://github.com/moesnow/hitokoto.git
 cd hitokoto
 make
+# optional
+sudo make install
 ```
 
 ## 用法

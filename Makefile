@@ -4,6 +4,7 @@ LDFLAGS =
 LIBS =
 
 TARGET = hitokoto
+INSTALL_DIR = /usr/local/bin
 
 # 检查操作系统类型
 ifeq ($(shell uname -s), Linux)
@@ -24,12 +25,15 @@ endif
 
 LIBS += -ljson-c -lcurl
 
-.PHONY: all clean
+.PHONY: all clean install
 
 all: $(TARGET)
 
 $(TARGET): hitokoto.c
 	$(CC) $(CFLAGS) $(LDFLAGS) $< -o $@ $(LIBS)
+
+install: $(TARGET)
+	install -m 755 $(TARGET) $(INSTALL_DIR)
 
 clean:
 	rm -f $(TARGET)
